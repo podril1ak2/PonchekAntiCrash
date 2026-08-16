@@ -54,12 +54,12 @@ public final class MonitoredPackets {
 
     private static Map<Class<?>, Monitored> index() {
         Map<Class<?>, Monitored> entries = new LinkedHashMap<>();
-        entries.put(ParticleS2CPacket.class, new Monitored("particle", 300));
+        entries.put(ParticleS2CPacket.class, new Monitored("particle", 600));
         entries.put(PlaySoundS2CPacket.class, new Monitored("sound", 200));
         entries.put(PlaySoundFromEntityS2CPacket.class, new Monitored("sound_from_entity", 200));
         entries.put(ExplosionS2CPacket.class, new Monitored("explosion", 40));
         entries.put(WorldEventS2CPacket.class, new Monitored("world_event", 200));
-        entries.put(EntitySpawnS2CPacket.class, new Monitored("entity_spawn", 600));
+        entries.put(EntitySpawnS2CPacket.class, new Monitored("entity_spawn", 1200));
         entries.put(EntitiesDestroyS2CPacket.class, new Monitored("entity_destroy", 300));
         entries.put(EntityStatusS2CPacket.class, new Monitored("entity_status", 400));
         entries.put(EntityStatusEffectS2CPacket.class, new Monitored("entity_effect", 200));
@@ -69,10 +69,10 @@ public final class MonitoredPackets {
         entries.put(TitleS2CPacket.class, new Monitored("title", 40));
         entries.put(SubtitleS2CPacket.class, new Monitored("subtitle", 40));
         entries.put(OverlayMessageS2CPacket.class, new Monitored("action_bar", 60));
-        entries.put(BossBarS2CPacket.class, new Monitored("boss_bar", 60));
-        entries.put(TeamS2CPacket.class, new Monitored("team", 200));
+        entries.put(BossBarS2CPacket.class, new Monitored("boss_bar", 200));
+        entries.put(TeamS2CPacket.class, new Monitored("team", 500));
         entries.put(ScoreboardObjectiveUpdateS2CPacket.class, new Monitored("scoreboard_objective", 100));
-        entries.put(PlayerListS2CPacket.class, new Monitored("player_list", 100));
+        entries.put(PlayerListS2CPacket.class, new Monitored("player_list", 300));
         entries.put(MapUpdateS2CPacket.class, new Monitored("map_update", 100));
         entries.put(OpenScreenS2CPacket.class, new Monitored("open_screen", 20));
         entries.put(InventoryS2CPacket.class, new Monitored("inventory", 100));

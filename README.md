@@ -20,8 +20,9 @@ Four guards run on every inbound packet:
 The `structure` guard walks packet fields reflectively instead of hardcoding packet
 layouts, so it also covers packets that are not in the rate-limit table.
 
-A second layer wraps vanilla packet dispatch in a safety net: if a packet still manages to
-throw on the main thread, the exception is caught and reported instead of ending the game.
+A second layer wraps the main-thread packet handler in a safety net: if a packet still
+manages to throw — including `StackOverflowError`, which vanilla does not catch — the
+failure is reported and the packet skipped instead of the game ending in a crash report.
 
 ## Commands
 

@@ -12,9 +12,9 @@ public final class AntiCrashConfig {
     public boolean chatNotifications = true;
     public long notificationCooldownMillis = 4000L;
 
-    public int maxParticleCount = 512;
+    public int maxParticleCount = 2048;
     public float maxSoundVolume = 24.0F;
-    public float minSoundPitch = 0.03F;
+    public float minSoundPitch = 0.0F;
     public float maxSoundPitch = 8.0F;
 
     public int maxTextNodes = 4096;
