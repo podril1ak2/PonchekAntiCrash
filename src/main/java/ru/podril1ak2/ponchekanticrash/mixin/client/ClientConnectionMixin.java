@@ -29,6 +29,7 @@ public abstract class ClientConnectionMixin {
         }
         try {
             pipeline.addBefore(context.name(), PacketFirewall.NAME, new PacketFirewall(new GuardPipeline(config), reporter));
+            PonchekAntiCrash.LOGGER.info("Packet firewall installed on {}", context.channel().remoteAddress());
         } catch (RuntimeException exception) {
             PonchekAntiCrash.LOGGER.error("Could not install the packet firewall", exception);
         }
