@@ -1,0 +1,10 @@
+{
+  "message.ponchekanticrash.blocked": "[PonchekAntiCrash] Попытка краша заблокирована: %s",
+  "command.ponchekanticrash.status": "PonchekAntiCrash %s, заблокировано пакетов за сессию: %s",
+  "command.ponchekanticrash.breakdown": "  %s: %s",
+  "command.ponchekanticrash.toggled": "PonchekAntiCrash теперь %s",
+  "command.ponchekanticrash.reloaded": "Конфигурация перезагружена",
+  "command.ponchekanticrash.reset": "Статистика очищена",
+  "command.ponchekanticrash.on": "включён",
+  "command.ponchekanticrash.off": "выключен"
+}

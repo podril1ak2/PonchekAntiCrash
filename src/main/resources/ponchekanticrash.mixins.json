@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "ru.podril1ak2.ponchekanticrash.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "client.ClientConnectionMixin",
+    "client.PacketDispatchMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

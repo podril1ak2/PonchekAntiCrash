@@ -1,0 +1,10 @@
+{
+  "message.ponchekanticrash.blocked": "[PonchekAntiCrash] Crash attempt blocked: %s",
+  "command.ponchekanticrash.status": "PonchekAntiCrash is %s, %s packets blocked this session",
+  "command.ponchekanticrash.breakdown": "  %s: %s",
+  "command.ponchekanticrash.toggled": "PonchekAntiCrash is now %s",
+  "command.ponchekanticrash.reloaded": "Configuration reloaded",
+  "command.ponchekanticrash.reset": "Statistics cleared",
+  "command.ponchekanticrash.on": "enabled",
+  "command.ponchekanticrash.off": "disabled"
+}

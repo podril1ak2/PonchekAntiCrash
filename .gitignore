@@ -1,0 +1,14 @@
+.gradle/
+build/
+out/
+classes/
+
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+run/
+remappedSrc/
+.mcp.json

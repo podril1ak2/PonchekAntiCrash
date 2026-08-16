@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "ponchekanticrash",
+  "version": "${version}",
+  "name": "PonchekAntiCrash",
+  "description": "Client-side packet firewall that blocks server-sent crash exploits.",
+  "authors": [
+    "podril1ak2"
+  ],
+  "contact": {
+    "homepage": "https://github.com/podril1ak2/PonchekAntiCrash",
+    "sources": "https://github.com/podril1ak2/PonchekAntiCrash",
+    "issues": "https://github.com/podril1ak2/PonchekAntiCrash/issues"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ru.podril1ak2.ponchekanticrash.PonchekAntiCrash"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "ponchekanticrash.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "~1.21.4",
+    "java": ">=21"
+  }
+}
